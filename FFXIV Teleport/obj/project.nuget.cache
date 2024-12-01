@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fDYZ9JlQZ9k=",
+  "dgSpecHash": "M1cax9d6q1M=",
   "success": true,
-  "projectFilePath": "C:\\Users\\thoma\\source\\repos\\FFXIV Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj",
+  "projectFilePath": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thoma\\.nuget\\packages\\clickabletransparentoverlay\\6.2.1\\clickabletransparentoverlay.6.2.1.nupkg.sha512",
     "C:\\Users\\thoma\\.nuget\\packages\\imgui.net\\1.89.7.1\\imgui.net.1.89.7.1.nupkg.sha512",

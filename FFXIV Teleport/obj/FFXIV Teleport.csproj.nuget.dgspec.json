@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thoma\\source\\repos\\FFXIV Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj": {}
+    "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thoma\\source\\repos\\FFXIV Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj": {
+    "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\FFXIV Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj",
         "projectName": "FFXIV Teleport",
-        "projectPath": "C:\\Users\\thoma\\source\\repos\\FFXIV Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj",
+        "projectPath": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\FFXIV Teleport.csproj",
         "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thoma\\source\\repos\\FFXIV Teleport\\FFXIV Teleport\\obj\\",
+        "outputPath": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

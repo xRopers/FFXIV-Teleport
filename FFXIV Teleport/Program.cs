@@ -17,7 +17,7 @@ namespace FFXIV_Teleport
         public static void Main(string[] args)
         {
             moduleBase = swed.GetModuleBase("ffxiv_dx11.exe"); // we had the main module here, (exe)
-            posAddress = swed.ReadPointer(moduleBase, 0x025DB980) + 0xB0;
+            posAddress = swed.ReadPointer(moduleBase, 0x025E3980) + 0xB0; //"ffxiv_dx11.exe"+025E3980 + B0, old address
             Program program = new Program();
             program.Start(); // run the render method
         }
