@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FFXIV Teleport")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0807b0ef290ce058123bd8ba953b6261ef9ddebb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8dbb2d78fa842cc45624412a7abca6c4af685bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("FFXIV Teleport")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FFXIV Teleport")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
