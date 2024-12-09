@@ -9,8 +9,8 @@ namespace FFXIV_Teleport
 {
     public class SavePoint
     {
-        public string title { get; set; } // title of place
+        public string title; //{ get; set; } // title of place
 
-        public Vector3 position { get; set; } // 3d coordinate of place
+        public Vector3 position; //{ get; set; } // 3d coordinate of place
     }
 }
