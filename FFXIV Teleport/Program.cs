@@ -9,86 +9,112 @@ namespace FFXIV_Teleport
 {
     public class Program : Overlay
     {
-        List<SavePoint> savePoints = new List<SavePoint>(); // store our save points
-        static Swed swed = new Swed("ffxiv_dx11"); // handle memory for process
-        static IntPtr moduleBase; // hold module base
-        static IntPtr posAddress; // hold address of position
+        private List<SavePoint> savePoints = new List<SavePoint>();
+        private static Swed swed = new Swed("ffxiv_dx11");
+        private static IntPtr moduleBase;
+        private static IntPtr posAddress;
 
-        // Variables for new teleport coordinates input
-        string inputX = "0.0";
-        string inputY = "0.0";
-        string inputZ = "0.0";
+        // Coordinates input variables
+        private string inputX = "0.0", inputY = "0.0", inputZ = "0.0";
 
         public static void Main(string[] args)
         {
-            moduleBase = swed.GetModuleBase("ffxiv_dx11.exe"); // we had the main module here, (exe)
-            posAddress = swed.ReadPointer(moduleBase, 0x025E3980) + 0xB0; //"ffxiv_dx11.exe"+025E3980 + B0, old address
-            Program program = new Program();
-            program.Start(); // run the render method
+            InitializeModule();
+            var program = new Program();
+            program.Start(); // Start rendering the overlay
+        }
+
+        private static void InitializeModule()
+        {
+            moduleBase = swed.GetModuleBase("ffxiv_dx11.exe");
+            posAddress = swed.ReadPointer(moduleBase, 0x025E3980) + 0xB0; // Read position address
         }
 
         protected override void Render()
         {
-            // create window stuff
             ImGui.Begin("Teleport Menu");
 
-            if (ImGui.Button("Save Current Position"))
-            {
-                SaveCurrentPosition();
-            }
-
-            ImGui.Separator();
-
-            // Display existing save points and allow teleport
-            foreach (var savePoint in savePoints)
-            {
-                if (ImGui.Button($"Teleport to {savePoint.title}"))
-                {
-                    TeleportToPosition(savePoint.position);
-                }
-            }
-
-            ImGui.Separator();
-
-            // Textbox for X, Y, Z coordinates input
-            ImGui.InputText("X Coordinate", ref inputX, 100);
-            ImGui.InputText("Y Coordinate", ref inputY, 100);
-            ImGui.InputText("Z Coordinate", ref inputZ, 100);
-
-            // Button to teleport to the new position entered in the input fields
-            if (ImGui.Button("Teleport to Coordinates"))
-            {
-                TeleportToInputPosition();
-            }
+            RenderCurrentCoordinates();
+            RenderButton("Save Current Position", SaveCurrentPosition);
+            RenderSavePointDropdown();
+            RenderButton("Clear Saved Points", ClearSavedPoints);
+            RenderCoordinatesInput();
 
             ImGui.End();
         }
 
-        void SaveCurrentPosition()
+        private void RenderCurrentCoordinates()
         {
-            // get current pos
-            Vector3 currentPlayerPosition = GetCurrentPlayerPositon();
-            // save point info
-            string savePointTitle = "Save Point " + (savePoints.Count + 1);
-            // create new savepoint and store it in the list
-            SavePoint savePoint = new SavePoint { title = savePointTitle, position = currentPlayerPosition };
-            savePoints.Add(savePoint);
+            Vector3 currentPlayerPosition = GetCurrentPlayerPosition();
+            string positionText = $"(X: {currentPlayerPosition.X:F2}, Y: {currentPlayerPosition.Y:F2}, Z: {currentPlayerPosition.Z:F2})";
+
+            ImGui.Text("Current Position:");
+            ImGui.Text(positionText); // Display the current position
+            ImGui.Separator();
         }
 
-        void TeleportToPosition(Vector3 position)
+        private void RenderButton(string label, Action onClick)
         {
-            swed.WriteVec(posAddress, position); // write new pos
-        }
-
-        void TeleportToInputPosition()
-        {
-            // Try to parse the X, Y, Z input coordinates
-            if (float.TryParse(inputX, out float x) &&
-                float.TryParse(inputY, out float y) &&
-                float.TryParse(inputZ, out float z))
+            if (ImGui.Button(label))
             {
-                // If parsing is successful, create a new vector and teleport to it
-                Vector3 targetPosition = new Vector3(x, y, z);
+                onClick.Invoke();
+            }
+            ImGui.Separator();
+        }
+
+        private void RenderSavePointDropdown()
+        {
+            if (savePoints.Count > 0)
+            {
+                int selectedSavePointIndex = -1;
+                string[] savePointTitles = new string[savePoints.Count];
+
+                for (int i = 0; i < savePoints.Count; i++)
+                {
+                    savePointTitles[i] = savePoints[i].title;
+                }
+
+                if (ImGui.Combo("Select Save Point", ref selectedSavePointIndex, savePointTitles, savePointTitles.Length) && selectedSavePointIndex != -1)
+                {
+                    TeleportToPosition(savePoints[selectedSavePointIndex].position);
+                }
+            }
+            else
+            {
+                ImGui.Text("No save points available.");
+            }
+            ImGui.Separator();
+        }
+
+        private void RenderCoordinatesInput()
+        {
+            ImGui.PushItemWidth(50.0f);
+            ImGui.InputText("X", ref inputX, 100);
+            ImGui.InputText("Y", ref inputY, 100);
+            ImGui.InputText("Z", ref inputZ, 100);
+            ImGui.PopItemWidth();
+
+            if (ImGui.Button("Teleport to Coordinates"))
+            {
+                TeleportToInputPosition();
+            }
+        }
+
+        private void SaveCurrentPosition()
+        {
+            Vector3 currentPlayerPosition = GetCurrentPlayerPosition();
+            savePoints.Add(new SavePoint { title = $"Save Point {savePoints.Count + 1}", position = currentPlayerPosition });
+        }
+
+        private void TeleportToPosition(Vector3 position)
+        {
+            swed.WriteVec(posAddress, position);
+        }
+
+        private void TeleportToInputPosition()
+        {
+            if (TryParseCoordinates(out var targetPosition))
+            {
                 TeleportToPosition(targetPosition);
             }
             else
@@ -97,9 +123,29 @@ namespace FFXIV_Teleport
             }
         }
 
-        Vector3 GetCurrentPlayerPositon()
+        private bool TryParseCoordinates(out Vector3 position)
         {
-            return swed.ReadVec(posAddress); // read our address and return as vec
+            // Initialize variables with default values
+            float x = 0f, y = 0f, z = 0f;
+
+            // Try to parse the input values
+            bool isValid = float.TryParse(inputX, out x) &&
+                           float.TryParse(inputY, out y) &&
+                           float.TryParse(inputZ, out z);
+
+            // If parsing is successful, create a new Vector3, otherwise set position to default Vector3
+            position = isValid ? new Vector3(x, y, z) : Vector3.Zero;
+            return isValid;
+        }
+
+        private void ClearSavedPoints()
+        {
+            savePoints.Clear();
+        }
+
+        private Vector3 GetCurrentPlayerPosition()
+        {
+            return swed.ReadVec(posAddress);
         }
     }
 }
