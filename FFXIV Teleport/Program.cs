@@ -12,7 +12,7 @@ namespace FFXIV_Teleport
     {
         private SavePointManager savePointManager = new SavePointManager();
         private TeleportFunctions teleportFunctions = new TeleportFunctions();
-        private string inputX = "0.0", inputY = "0.0", inputZ = "0.0";
+        private string inputX = "0.00", inputY = "0.00", inputZ = "0.00";
         private string savePointName = string.Empty;
 
         public static void Main(string[] args)
