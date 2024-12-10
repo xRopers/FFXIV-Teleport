@@ -837,15 +837,6 @@
           "build/SixLabors.ImageSharp.props": {}
         }
       },
-      "swed32/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/swed32.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/swed32.dll": {}
-        }
-      },
       "swed64/1.0.5": {
         "type": "package",
         "compile": {
@@ -3857,19 +3848,6 @@
         "sixlabors.imagesharp.128.png",
         "sixlabors.imagesharp.3.0.2.nupkg.sha512",
         "sixlabors.imagesharp.nuspec"
-      ]
-    },
-    "swed32/1.1.0": {
-      "sha512": "fZWXefUAxSrMyqIjMQTUdRVvbUgTdtcx9HBU9eYwZEqzkKOmrj8NeRCGOl+W3+sEQebQHHisylLn7n2aWqKCbw==",
-      "type": "package",
-      "path": "swed32/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net6.0/swed32.dll",
-        "swed32.1.1.0.nupkg.sha512",
-        "swed32.nuspec",
-        "swedishman.jpg"
       ]
     },
     "swed64/1.0.5": {
@@ -8567,7 +8545,6 @@
       "SixLabors.ImageSharp >= 3.0.2",
       "Veldrid.ImGui >= 5.72.0",
       "Vortice.Mathematics >= 1.6.2",
-      "swed32 >= 1.1.0",
       "swed64 >= 1.0.5"
     ]
   },
@@ -8640,10 +8617,6 @@
           "Vortice.Mathematics": {
             "target": "Package",
             "version": "[1.6.2, )"
-          },
-          "swed32": {
-            "target": "Package",
-            "version": "[1.1.0, )"
           },
           "swed64": {
             "target": "Package",
