@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text.Json;
+﻿using System.Text.Json;
 using ImGuiNET;
-using Swed64;
 
 namespace FFXIV_Teleport
 {
@@ -17,21 +13,7 @@ namespace FFXIV_Teleport
         };
 
         private List<SavePoint> savePoints = new List<SavePoint>();
-       // private Swed swed = new Swed("ffxiv_dx11");
-       // private IntPtr moduleBase;
-       // private IntPtr posAddress;
-
-        public SavePointManager()
-        {
-          //  InitializeModule();
-        }
-
-        private void InitializeModule()
-        {
-          //  moduleBase = swed.GetModuleBase("ffxiv_dx11.exe");
-          //  posAddress = swed.ReadPointer(moduleBase, 0x025E3980) + 0xB0;
-        }
-
+        
         public void LoadSavePoints()
         {
             try
@@ -71,7 +53,6 @@ namespace FFXIV_Teleport
                 savePointName = $"Save Point {savePoints.Count + 1}";
             }
 
-            //var currentPosition = swed.ReadVec(posAddress);
             var currentPosition = GameMemoryConfig.SwedInstance.ReadVec(GameMemoryConfig.PositionAddress);
             savePoints.Add(new SavePoint { Title = savePointName, Position = currentPosition });
             SaveSavePoints();
@@ -91,7 +72,6 @@ namespace FFXIV_Teleport
 
                 if (ImGui.Combo("Select Save Point", ref selectedIndex, titles, titles.Length) && selectedIndex != -1)
                 {
-                    // swed.WriteVec(posAddress, savePoints[selectedIndex].Position);
                     GameMemoryConfig.SwedInstance.WriteVec(GameMemoryConfig.PositionAddress, savePoints[selectedIndex].Position);
                 }
             }

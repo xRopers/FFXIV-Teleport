@@ -1,11 +1,9 @@
 ﻿using Swed64;
-using System;
 
 namespace FFXIV_Teleport
 {
     public static class GameMemoryConfig
-    {
-     //   private static Swed swed = new Swed("ffxiv_dx11");
+    {     
         private static readonly Swed swed = new Swed("ffxiv_dx11");
 
         // Lazy initialization of the module base address
@@ -14,9 +12,6 @@ namespace FFXIV_Teleport
         // Define offsets as constants
         public const int BaseOffset = 0x025E3980;
         public const int PositionOffset = 0xB0;
-
-        // Public property to access the Swed instance
-        public static Swed SwedInstance => swed;
 
         public static IntPtr ModuleBase
         {
@@ -29,6 +24,9 @@ namespace FFXIV_Teleport
                 return moduleBase;
             }
         }
+
+        // Public property to access the Swed instance
+        public static Swed SwedInstance => swed;
 
         // Helper to calculate address using the base and offsets
         public static IntPtr GetPointerOffset(params int[] offsets)

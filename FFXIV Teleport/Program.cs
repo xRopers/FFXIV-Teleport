@@ -1,10 +1,5 @@
 ﻿using ClickableTransparentOverlay;
 using ImGuiNET;
-using Swed64;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Numerics;
 
 namespace FFXIV_Teleport
 {
