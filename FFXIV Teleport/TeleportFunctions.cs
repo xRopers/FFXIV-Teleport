@@ -7,7 +7,7 @@ namespace FFXIV_Teleport
 {
     public class TeleportFunctions
     {
-        private Swed swed = new Swed("ffxiv_dx11");
+       // private Swed swed = new Swed("ffxiv_dx11");
        // private IntPtr moduleBase;
        // private IntPtr posAddress;
 
@@ -25,7 +25,7 @@ namespace FFXIV_Teleport
         public void RenderCurrentCoordinates()
         {
             // var currentPosition = swed.ReadVec(posAddress);
-            var currentPosition = swed.ReadVec(GameMemoryConfig.PositionAddress);
+            var currentPosition = GameMemoryConfig.SwedInstance.ReadVec(GameMemoryConfig.PositionAddress);
             string positionText = $"(X: {currentPosition.X:F2}, Y: {currentPosition.Y:F2}, Z: {currentPosition.Z:F2})";
             ImGui.Text("Current Position");
             ImGui.Text(positionText);
@@ -59,7 +59,7 @@ namespace FFXIV_Teleport
         public void TeleportToPosition(Vector3 position)
         {
             //swed.WriteVec(posAddress, position);
-            swed.WriteVec(GameMemoryConfig.PositionAddress, position);
+            GameMemoryConfig.SwedInstance.WriteVec(GameMemoryConfig.PositionAddress, position);
         }
     }
 }
