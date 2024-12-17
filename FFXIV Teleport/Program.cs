@@ -5,12 +5,11 @@ namespace FFXIV_Teleport
 {
     public class Program : Overlay
     {
-        private SavePointManager savePointManager = new SavePointManager();
-        private TeleportFunctions teleportFunctions = new TeleportFunctions();
+        private readonly SavePointManager savePointManager = new();
         private string inputX = "0.00", inputY = "0.00", inputZ = "0.00";
         private string savePointName = string.Empty;
 
-        public static void Main(string[] args)
+        public static void Main()
         {
             var program = new Program();
             program.savePointManager.LoadSavePoints();
@@ -21,7 +20,7 @@ namespace FFXIV_Teleport
         {
             ImGui.Begin("Teleport Menu");
 
-            teleportFunctions.RenderCurrentCoordinates();
+            TeleportFunctions.RenderCurrentCoordinates();
             RenderSavePointInput();
             RenderButton("Save Current Position", () => savePointManager.SaveCurrentPosition(savePointName)); // Pass the savePointName here
             savePointManager.RenderSavePointDropdown();
@@ -36,7 +35,7 @@ namespace FFXIV_Teleport
             ImGui.InputText("Save Point Name", ref savePointName, 100);
         }
 
-        private void RenderButton(string label, Action onClick)
+        private static void RenderButton(string label, Action onClick)
         {
             if (ImGui.Button(label))
             {
@@ -55,7 +54,7 @@ namespace FFXIV_Teleport
 
             if (ImGui.Button("Teleport to Coordinates"))
             {
-                teleportFunctions.TeleportToInputPosition(inputX, inputY, inputZ);
+                TeleportFunctions.TeleportToInputPosition(inputX, inputY, inputZ);
             }
         }
     }

@@ -5,7 +5,7 @@ namespace FFXIV_Teleport
 {
     public class TeleportFunctions
     {
-        public void RenderCurrentCoordinates()
+        public static void RenderCurrentCoordinates()
         {
             var currentPosition = GameMemoryConfig.SwedInstance.ReadVec(GameMemoryConfig.PositionAddress);
             string positionText = $"(X: {currentPosition.X:F2}, Y: {currentPosition.Y:F2}, Z: {currentPosition.Z:F2})";
@@ -14,7 +14,7 @@ namespace FFXIV_Teleport
             ImGui.Separator();
         }
 
-        public void TeleportToInputPosition(string inputX, string inputY, string inputZ)
+        public static void TeleportToInputPosition(string inputX, string inputY, string inputZ)
         {
             if (TryParseCoordinates(inputX, inputY, inputZ, out var targetPosition))
             {
@@ -26,11 +26,11 @@ namespace FFXIV_Teleport
             }
         }
 
-        public bool TryParseCoordinates(string inputX, string inputY, string inputZ, out Vector3 position)
+        public static bool TryParseCoordinates(string inputX, string inputY, string inputZ, out Vector3 position)
         {
-            float x = 0f, y = 0f, z = 0f;
+            float y = 0f, z = 0f;
 
-            bool isValid = float.TryParse(inputX, out x) &&
+            bool isValid = float.TryParse(inputX, out float x) &&
                            float.TryParse(inputY, out y) &&
                            float.TryParse(inputZ, out z);
 
@@ -38,7 +38,7 @@ namespace FFXIV_Teleport
             return isValid;
         }
 
-        public void TeleportToPosition(Vector3 position)
+        public static void TeleportToPosition(Vector3 position)
         {            
             GameMemoryConfig.SwedInstance.WriteVec(GameMemoryConfig.PositionAddress, position);
         }

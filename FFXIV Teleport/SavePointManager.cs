@@ -6,13 +6,13 @@ namespace FFXIV_Teleport
     public class SavePointManager
     {
         private static readonly string SaveFilePath = "savePoints.json";
-        private static JsonSerializerOptions jsonOptions = new JsonSerializerOptions
+        private static readonly JsonSerializerOptions jsonOptions = new()
         {
             Converters = { new Vector3JsonConverter() },
             WriteIndented = true
         };
 
-        private List<SavePoint> savePoints = new List<SavePoint>();
+        private List<SavePoint> savePoints = new();
         
         public void LoadSavePoints()
         {
@@ -59,6 +59,11 @@ namespace FFXIV_Teleport
         }
 
         public void RenderSavePointDropdown()
+        {
+            RenderSavePointDropdown(savePoints);
+        }
+
+        public static void RenderSavePointDropdown(List<SavePoint> savePoints)
         {
             if (savePoints.Count > 0)
             {
