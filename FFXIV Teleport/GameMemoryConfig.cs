@@ -10,7 +10,7 @@ namespace FFXIV_Teleport
         private static IntPtr moduleBase = IntPtr.Zero;
 
         // Define offsets as constants
-        public const int BaseOffset = 0x025E3980;
+        public const int BaseOffset = 0x025E0980;
         public const int PositionOffset = 0xB0;
 
         public static IntPtr ModuleBase

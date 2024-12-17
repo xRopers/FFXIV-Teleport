@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\savepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\savepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\savepointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\savepointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\vector3jsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\vector3jsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\gamememoryconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\gamememoryconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\teleportfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\teleportfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\gamememoryconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\gamememoryconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\savepointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\savepointmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\vector3jsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\vector3jsonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|c:\\users\\thoma\\source\\repos\\ffxiv-teleport\\ffxiv teleport\\savepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEDA92C-2EE8-4330-BFAB-718B482A1A0A}|FFXIV Teleport\\FFXIV Teleport.csproj|solutionrelative:ffxiv teleport\\savepoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,42 +42,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "GameMemoryConfig.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\GameMemoryConfig.cs",
               "RelativeDocumentMoniker": "FFXIV Teleport\\GameMemoryConfig.cs",
               "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\GameMemoryConfig.cs*",
               "RelativeToolTip": "FFXIV Teleport\\GameMemoryConfig.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T07:03:01.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "TeleportFunctions.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\TeleportFunctions.cs",
               "RelativeDocumentMoniker": "FFXIV Teleport\\TeleportFunctions.cs",
-              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\TeleportFunctions.cs*",
-              "RelativeToolTip": "FFXIV Teleport\\TeleportFunctions.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\TeleportFunctions.cs",
+              "RelativeToolTip": "FFXIV Teleport\\TeleportFunctions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T10:14:46.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T10:14:46.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Vector3JsonConverter.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\Vector3JsonConverter.cs",
               "RelativeDocumentMoniker": "FFXIV Teleport\\Vector3JsonConverter.cs",
-              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\Vector3JsonConverter.cs*",
-              "RelativeToolTip": "FFXIV Teleport\\Vector3JsonConverter.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\Vector3JsonConverter.cs",
+              "RelativeToolTip": "FFXIV Teleport\\Vector3JsonConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T10:14:26.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T10:14:26.607Z"
             },
             {
               "$type": "Document",
@@ -85,16 +83,15 @@
               "Title": "SavePointManager.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\SavePointManager.cs",
               "RelativeDocumentMoniker": "FFXIV Teleport\\SavePointManager.cs",
-              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\SavePointManager.cs*",
-              "RelativeToolTip": "FFXIV Teleport\\SavePointManager.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\SavePointManager.cs",
+              "RelativeToolTip": "FFXIV Teleport\\SavePointManager.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwEkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T10:13:52.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T10:13:52.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "SavePoint.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\SavePoint.cs",
               "RelativeDocumentMoniker": "FFXIV Teleport\\SavePoint.cs",
@@ -102,21 +99,19 @@
               "RelativeToolTip": "FFXIV Teleport\\SavePoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T10:08:26.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T10:08:26.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\Program.cs",
               "RelativeDocumentMoniker": "FFXIV Teleport\\Program.cs",
-              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\Program.cs*",
-              "RelativeToolTip": "FFXIV Teleport\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thoma\\source\\repos\\FFXIV-Teleport\\FFXIV Teleport\\Program.cs",
+              "RelativeToolTip": "FFXIV Teleport\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T11:48:10.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T11:48:10.902Z"
             }
           ]
         }
