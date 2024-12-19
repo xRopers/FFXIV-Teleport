@@ -9,7 +9,6 @@
 ## Features
 
 - Save and load positions in-game.
-- Dynamic memory offset configuration.
 - Overlays for teleportation management.
 - Modular structure for extensibility.
 
@@ -33,17 +32,6 @@
 
 3. Build the project: dotnet build
 
-4. Ensure config.json is properly configured (see below)
-
-### Configuration
-
-1. Edit the config.json file to set the executable and memory offsets:
-   ```json
-   {
-      "gameExecutable": "ffxiv_dx11",
-      "moduleBaseOffset": "0x025E3980"
-   }
-   ```
 ### Usage
 
 1. Launch FFXIV game client and then launch FFXIV-Teleport.
@@ -53,13 +41,12 @@
    Teleport to a saved position.
    Manage saved points.
 
-3. Customize the experience via config.json.
 
 ### Development
 
 File Structure
 
-   1. ``GameMemoryConfig.cs``: Manages memory offsets and dynamic address resolution.
+   1. ``GameMemoryConfig.cs``: Manages memory offsets.
    2. ``TeleportFunctions.cs``: Handles teleportation and position manipulation.
    3. ``SavePointManager.cs``: Manages save point data and serialization.
    4. ``Program.cs``: The main entry point for the application.
