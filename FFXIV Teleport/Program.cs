@@ -22,7 +22,7 @@ namespace FFXIV_Teleport
 
             TeleportFunctions.RenderCurrentCoordinates();
             RenderSavePointInput();
-            RenderButton("Save Current Position", () => savePointManager.SaveCurrentPosition(savePointName)); // Pass the savePointName here
+            RenderButton("Save Current Position", () => savePointManager.SaveCurrentPosition(savePointName));
             savePointManager.RenderSavePointDropdown();
             RenderButton("Clear Saved Points", savePointManager.ClearSavedPoints);
             RenderCoordinatesInput();
