@@ -60,15 +60,18 @@ Development
 File Structure
 
 GameMemoryConfig.cs: Manages memory offsets and dynamic address resolution.
+
 TeleportFunctions.cs: Handles teleportation and position manipulation.
+
 SavePointManager.cs: Manages save point data and serialization.
+
 Program.cs: The main entry point for the application.
 
 Contribution
 We welcome contributions! Please follow these steps:
 
 Fork the repository.
-Create a new branch: ``` git checkout -b feature-branch```
+Create a new branch: ```git checkout -b feature-branch```
 Submit a pull request for review.
 
 License
