@@ -3,7 +3,7 @@
 namespace FFXIV_Teleport
 {
     public static class GameMemoryConfig
-    {     
+    {
         private static readonly Swed swed = new("ffxiv_dx11");
 
         // Lazy initialization of the module base address
