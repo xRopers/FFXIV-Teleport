@@ -57,25 +57,23 @@
 
 ### Development
 
-1. File Structure
+File Structure
 
-   ``GameMemoryConfig.cs``: Manages memory offsets and dynamic address resolution.
-   ``TeleportFunctions.cs``: Handles teleportation and position manipulation.
-   ``SavePointManager.cs``: Manages save point data and serialization.
-   ``Program.cs``: The main entry point for the application.
+   1. ``GameMemoryConfig.cs``: Manages memory offsets and dynamic address resolution.
+   2. ``TeleportFunctions.cs``: Handles teleportation and position manipulation.
+   3. ``SavePointManager.cs``: Manages save point data and serialization.
+   4. ``Program.cs``: The main entry point for the application.
 
 ### Contribution
 
 We welcome contributions! Please follow these steps:
 
 Fork the repository.
+   .Create a new branch: ``git checkout -b feature-branch``
+   .Submit a pull request for review.
 
-   Create a new branch: ```git checkout -b feature-branch```
-
-Submit a pull request for review.
-
-License
+### License
    This project is licensed under the GNU General Public License v3.0. See the LICENSE file for details.
 
-Disclaimer
+### Disclaimer
    This tool is intended for educational purposes only. Use of this tool may violate Final Fantasy XIV's Terms of Service, and the developers are not responsible for any consequences resulting from its use.
