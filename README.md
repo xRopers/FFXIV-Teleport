@@ -68,7 +68,7 @@ Contribution
 We welcome contributions! Please follow these steps:
 
 Fork the repository.
-Create a new branch: git checkout -b feature-branch.
+Create a new branch: ``` git checkout -b feature-branch```
 Submit a pull request for review.
 
 License
