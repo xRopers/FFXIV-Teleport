@@ -58,4 +58,3 @@ namespace FFXIV_Teleport
             }
         }
     }
-}
