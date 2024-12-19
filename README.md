@@ -38,12 +38,12 @@
 Configuration
 
 Edit the config.json file to set the executable and memory offsets:
-
+```bash
 {
   "gameExecutable": "ffxiv_dx11",
   "moduleBaseOffset": "0x025E3980"
 }
-
+```
 Usage
 
 1. Launch FFXIV-Teleport and the FFXIV game client.
