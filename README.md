@@ -35,16 +35,16 @@
 
 4. Ensure config.json is properly configured (see below)
 
-Configuration
+### Configuration
 
-Edit the config.json file to set the executable and memory offsets:
-```json
-{
-  "gameExecutable": "ffxiv_dx11",
-  "moduleBaseOffset": "0x025E3980"
-}
-```
-Usage
+1. Edit the config.json file to set the executable and memory offsets:
+   ```json
+   {
+      "gameExecutable": "ffxiv_dx11",
+      "moduleBaseOffset": "0x025E3980"
+   }
+   ```
+### Usage
 
 1. Launch FFXIV game client and then launch FFXIV-Teleport.
 
@@ -55,19 +55,16 @@ Usage
 
 3. Customize the experience via config.json.
 
-Development
+### Development
 
-File Structure
+1. File Structure
 
-   GameMemoryConfig.cs: Manages memory offsets and dynamic address resolution.
+   ``GameMemoryConfig.cs``: Manages memory offsets and dynamic address resolution.
+   ``TeleportFunctions.cs``: Handles teleportation and position manipulation.
+   ``SavePointManager.cs``: Manages save point data and serialization.
+   ``Program.cs``: The main entry point for the application.
 
-   TeleportFunctions.cs: Handles teleportation and position manipulation.
-
-   SavePointManager.cs: Manages save point data and serialization.
-
-   Program.cs: The main entry point for the application.
-
-Contribution
+### Contribution
 
 We welcome contributions! Please follow these steps:
 
